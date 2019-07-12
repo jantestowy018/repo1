@@ -1,0 +1,149 @@
+<html dir="ltr" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head id="Head1" runat="server">
+<meta name="ProgId" content="SharePoint.WebPartPage.Document" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Szablon HTML</title>
+<meta name="Microsoft Theme" content="Lacquer 1011, default" />
+<style type="text/css">
+.style3 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.formFieldStyle {
+	font-family: Arial, Helvetica, sans-serif;
+    word-break: break-all;
+}
+.style9 {
+	text-align: left;
+}
+.style10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+}
+.style13 {
+	background: #eaebed;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+}
+.style14 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+}
+ p.MsoNormal
+	{margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+		margin-left: 0cm;
+	margin-right: 0cm;
+	margin-top: 0cm;
+}
+	.style15
+	{
+		background: #eaebed;
+		text-align: left;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: x-small;
+		width: 18%;
+	}
+	.style16
+	{
+		background: #eaebed;
+		text-align: left;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: x-small;
+		height: 11px;
+		width: 18%;
+	}
+</style>
+</head>
+<body ><form id="form1" runat="server"><table border="1" width="760" style="border-color:gray" cellpadding="4px" cellspacing="0px">					
+		<tr>					
+			<td rowspan="2" width="100" align="center">{BARCODE2D}</td>
+			<td colspan="3"  align="center" width="300" class="style3">Sygnatura: <br/>{WFD_Signature}</td>
+			<td rowspan="2" height="100" width="360" align="center"> {BARCODE1D}</td>
+		</tr>
+		<tr>
+			<td colspan="3" align="center" class="style3" >ID :{WFD_ID}</td>
+		</tr><tr><td colspan="2" rowspan=15 class="style13">Systemowe </td><tr><td class="style13">Data utworzenia</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{L:WFD_TSInsert}</span></td></tr>
+<tr><td class="style13">Data utworzenia - Dzień</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{DD:WFD_TSInsert}</span></td></tr>
+<tr><td class="style13">Data utworzenia - Miesiąc</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{DM:WFD_TSInsert}</span></td></tr>
+<tr><td class="style13">Data utworzenia - Rok</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{DY:WFD_TSInsert}</span></td></tr>
+<tr><td class="style13">ID elementu</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_ID}</span></td></tr>
+<tr><td class="style13">Sygnatura</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_Signature}</span></td></tr>
+<tr><td class="style13">Autor - Login</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{I:WFD_CreatedBy}</span></td></tr>
+<tr><td class="style13">Autor - Nazwa</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{N:WFD_CreatedBy}</span></td></tr>
+<tr><td class="style13">Osoby przypisane - Login</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{I:ASSIGNEDPERSONFULL}</span></td></tr>
+<tr><td class="style13">Osoby przypisane - Nazwa</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{N:ASSIGNEDPERSONFULL}</span></td></tr>
+<tr><td class="style13">Krok</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{STP_Name}</span></td></tr>
+<tr><td class="style13">Typ formularza</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{DTYPE_Name}</span></td></tr>
+<tr><td class="style13">Workflow</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WF_Name}</span></td></tr>
+<tr><td class="style13">Proces</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{DEF_Name}</span></td></tr>
+</tr><tr><td colspan="2" rowspan=26 class="style13">Atrybuty </td><tr><td class="style13">Active User: Email</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttText4}</span></td></tr>
+<tr><td class="style13">Active User: Username</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttText1}</span></td></tr>
+<tr><td class="style13">Email</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttText2}</span></td></tr>
+<tr><td class="style13">ID</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttText3}</span></td></tr>
+<tr><td class="style13">Liczba</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttInt1}</span></td></tr>
+<tr><td class="style13">Liczba float</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{L:WFD_AttDecimal1}</span></td></tr>
+<tr><td class="style13">Liczba float - Przecinek</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{FC:WFD_AttDecimal1}</span></td></tr>
+<tr><td class="style13">Liczba float - Kropka</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{FDOT:WFD_AttDecimal1}</span></td></tr>
+<tr><td class="style13">Multiline</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttLong1}</span></td></tr>
+<tr><td class="style13">Obraz</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttLong4}</span></td></tr>
+<tr><td class="style13">Osoba / Nadaj uprawnienia</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttChoose2}</span></td></tr>
+<tr><td class="style13">Osoba / Nadaj uprawnienia - Nazwa wyświetlana</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{N:WFD_AttChoose2}</span></td></tr>
+<tr><td class="style13">Osoba / Nadaj uprawnienia - ID</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{I:WFD_AttChoose2}</span></td></tr>
+<tr><td class="style13">Obraz</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttLong2}</span></td></tr>
+<tr><td class="style13">Obraz 2</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttLong3}</span></td></tr>
+<tr><td class="style13">Picker </td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttChoose1}</span></td></tr>
+<tr><td class="style13">Picker  - Nazwa wyświetlana</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{N:WFD_AttChoose1}</span></td></tr>
+<tr><td class="style13">Picker  - ID</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{I:WFD_AttChoose1}</span></td></tr>
+<tr><td class="style13">Data godzina</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{L:WFD_AttDateTime1}</span></td></tr>
+<tr><td class="style13">Data godzina - Dzień</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{DD:WFD_AttDateTime1}</span></td></tr>
+<tr><td class="style13">Data godzina - Miesiąc</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{DM:WFD_AttDateTime1}</span></td></tr>
+<tr><td class="style13">Data godzina - Rok</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{DY:WFD_AttDateTime1}</span></td></tr>
+<tr><td class="style13">Soap URL</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttText6}</span></td></tr>
+<tr><td class="style13">Spółka</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{COM_NAME}</span></td></tr>
+<tr><td class="style13">Text</td>
+<td colspan="2" class="style10"><span class="formFieldStyle">{WFD_AttText5}</span></td></tr>
+</tr></table><b>Lista REST</b><br><table border="1" width="760" style="border-color:gray" cellpadding="4px" cellspacing="0px"><tr>{SUBELEMHEADERTEMPLATE:1561}<th>LP</th><th>ID</th><th>Name</th><th>Address</th><th>Email</th><th>Address 2</th><th>Address 3</th>{/SUBELEMHEADERTEMPLATE}</tr>{SUBELEMROWTEMPLATE:1561}<tr><td>{DET_LP}</td><td>{DET_Value2}</td><td>{DET_Att1}</td><td>{DET_Att3}</td><td>{DET_Att2}</td><td>{DET_Att4}</td><td>{DET_Att5}</td></tr>{/SUBELEMROWTEMPLATE}</table><b>Lista SOAP #2</b><br><table border="1" width="760" style="border-color:gray" cellpadding="4px" cellspacing="0px"><tr>{SUBELEMHEADERTEMPLATE:1591}<th>LP</th><th>Column2</th><th>Column1</th>{/SUBELEMHEADERTEMPLATE}</tr>{SUBELEMROWTEMPLATE:1591}<tr><td>{DET_LP}</td><td>{DET_Att4}</td><td>{DET_Att3}</td></tr>{/SUBELEMROWTEMPLATE}</table><b>Lista SOAP</b><br><table border="1" width="760" style="border-color:gray" cellpadding="4px" cellspacing="0px"><tr>{SUBELEMHEADERTEMPLATE:1597}<th>LP</th><th>Column1</th><th>Column2</th>{/SUBELEMHEADERTEMPLATE}</tr>{SUBELEMROWTEMPLATE:1597}<tr><td>{DET_LP}</td><td>{DET_Att3}</td><td>{DET_Att4}</td></tr>{/SUBELEMROWTEMPLATE}</table><b>Lista pozycji</b><br><table border="1" width="760" style="border-color:gray" cellpadding="4px" cellspacing="0px"><tr>{SUBELEMHEADERTEMPLATE:1599}<th>LP</th><th>Tekstowa wyliczana</th><th>Nazwa</th><th>Liczbowa wyliczana</th><th>Autocomplete</th>{/SUBELEMHEADERTEMPLATE}</tr>{SUBELEMROWTEMPLATE:1599}<tr><td>{DET_LP}</td><td>{DET_Att2}</td><td>{DET_Att1}</td><td>{DET_Value1}</td><td>{DET_Att3}</td></tr>{/SUBELEMROWTEMPLATE}</table><b>Lista załączników</b><br><table border="1" width="760" style="border-color:gray" cellpadding="4px" cellspacing="0px"><tr>{SUBELEMHEADERTEMPLATE:1601}<th>LP</th><th>Załączniki lokalne</th><th>Załączniki powiązane</th>{/SUBELEMHEADERTEMPLATE}</tr>{SUBELEMROWTEMPLATE:1601}<tr><td>{DET_LP}</td><td>{DET_Att1}</td><td>{DET_Att3}</td></tr>{/SUBELEMROWTEMPLATE}</table>
+</form>
+</body>
+</html>
